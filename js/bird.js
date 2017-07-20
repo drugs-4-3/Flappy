@@ -4,6 +4,8 @@ function Bird() {
     
     this.y = height/2;
     this.x = 64;
+    this.height = 50;
+    this.width = 50;
     this.y_speed = 0;
     this.x_speed = 0;
     this.lift = -10;
@@ -12,6 +14,7 @@ function Bird() {
     this.show = function() {
         fill(255);
         ellipse(this.x, this.y, 50, 50);
+        // image(smiley, this.x, this.y, this.width, this.height);
     }  
 
     this.update = function() {
