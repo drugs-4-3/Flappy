@@ -37,8 +37,11 @@ function draw() {
         }
     }
 
-    if (frameCount % 50 == 0) {
-        pipes.push(new Pipe());
+    if (frameCount % 15 == 0) {
+        if(random(100) > 72) {
+            pipes.push(new Pipe());
+        }
+        
     }
     if (frameCount % 100 == 0) {
         score++;
